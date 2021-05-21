@@ -1,0 +1,33 @@
+﻿@Model ViewModelCore.Models.MovieDiscViewModel
+@{
+    ViewData["Title"] = "Moviedisc";
+}
+
+<h1>MovieInfo</h1>
+
+@*@foreach (var item in Model  )
+{
+    <ul>
+        <li>@item.Id</li>
+        <li>@item.MovieName</li>
+        <li>@item.DiscName</li>
+        <li>@item.Mid</li>
+      
+      
+    </ul>
+} 
+
+<hr />*@
+<h2>DiscInfo</h2>
+@foreach (var item in Model.discinfo )
+{
+    <ul>
+       
+        <li>@item.DiscName</li>
+        <li>@item.Mid</li>
+    </ul>
+}
+
+@*<ul>
+    <li>@Model.movieinfo.MovieName</li>
+</ul>*@
